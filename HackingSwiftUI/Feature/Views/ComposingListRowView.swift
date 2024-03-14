@@ -36,7 +36,7 @@ struct ComposingListRowView: View {
         }
     }
     
-    struct ItemRow: View {
+    private struct ItemRow: View {
         let item: MenuItem
         
         var body: some View {

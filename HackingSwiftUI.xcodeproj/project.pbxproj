@@ -21,6 +21,10 @@
 		A31812452BA37A2B000891CD /* BuildingMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31812442BA37A2B000891CD /* BuildingMenuView.swift */; };
 		A31812482BA38C7D000891CD /* BundleReadExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31812472BA38C7D000891CD /* BundleReadExtension.swift */; };
 		A318124A2BA39370000891CD /* ComposingListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31812492BA39370000891CD /* ComposingListRowView.swift */; };
+		A31812822BA39ED3000891CD /* RefactoredListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31812812BA39ED3000891CD /* RefactoredListRowView.swift */; };
+		A31812842BA3B4F0000891CD /* Image+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31812832BA3B4F0000891CD /* Image+Extension.swift */; };
+		A31812872BA3B741000891CD /* DisplayDetailsWithNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31812862BA3B741000891CD /* DisplayDetailsWithNavigation.swift */; };
+		A31812892BA3B962000891CD /* ItemDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31812882BA3B962000891CD /* ItemDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +62,10 @@
 		A31812442BA37A2B000891CD /* BuildingMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingMenuView.swift; sourceTree = "<group>"; };
 		A31812472BA38C7D000891CD /* BundleReadExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleReadExtension.swift; sourceTree = "<group>"; };
 		A31812492BA39370000891CD /* ComposingListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposingListRowView.swift; sourceTree = "<group>"; };
+		A31812812BA39ED3000891CD /* RefactoredListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefactoredListRowView.swift; sourceTree = "<group>"; };
+		A31812832BA3B4F0000891CD /* Image+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Extension.swift"; sourceTree = "<group>"; };
+		A31812862BA3B741000891CD /* DisplayDetailsWithNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayDetailsWithNavigation.swift; sourceTree = "<group>"; };
+		A31812882BA3B962000891CD /* ItemDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,27 +157,31 @@
 		A31812422BA379D8000891CD /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				A31812852BA3B6FE000891CD /* Views */,
 				A31812462BA38C05000891CD /* Extensions */,
-				A31812432BA379E7000891CD /* BuildingMenu */,
 			);
 			path = Feature;
-			sourceTree = "<group>";
-		};
-		A31812432BA379E7000891CD /* BuildingMenu */ = {
-			isa = PBXGroup;
-			children = (
-				A31812442BA37A2B000891CD /* BuildingMenuView.swift */,
-				A31812492BA39370000891CD /* ComposingListRowView.swift */,
-			);
-			path = BuildingMenu;
 			sourceTree = "<group>";
 		};
 		A31812462BA38C05000891CD /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				A31812472BA38C7D000891CD /* BundleReadExtension.swift */,
+				A31812832BA3B4F0000891CD /* Image+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A31812852BA3B6FE000891CD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A31812442BA37A2B000891CD /* BuildingMenuView.swift */,
+				A31812492BA39370000891CD /* ComposingListRowView.swift */,
+				A31812812BA39ED3000891CD /* RefactoredListRowView.swift */,
+				A31812862BA3B741000891CD /* DisplayDetailsWithNavigation.swift */,
+				A31812882BA3B962000891CD /* ItemDetailView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,11 +315,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A31812892BA3B962000891CD /* ItemDetailView.swift in Sources */,
 				A31811CF2BA377BE000891CD /* Menu.swift in Sources */,
 				A31812482BA38C7D000891CD /* BundleReadExtension.swift in Sources */,
 				A31811322BA37690000891CD /* ContentView.swift in Sources */,
 				A318124A2BA39370000891CD /* ComposingListRowView.swift in Sources */,
 				A31812412BA377BE000891CD /* Order.swift in Sources */,
+				A31812872BA3B741000891CD /* DisplayDetailsWithNavigation.swift in Sources */,
+				A31812842BA3B4F0000891CD /* Image+Extension.swift in Sources */,
+				A31812822BA39ED3000891CD /* RefactoredListRowView.swift in Sources */,
 				A31812452BA37A2B000891CD /* BuildingMenuView.swift in Sources */,
 				A31811302BA37690000891CD /* HackingSwiftUIApp.swift in Sources */,
 				A31812402BA377BE000891CD /* Helper.swift in Sources */,
