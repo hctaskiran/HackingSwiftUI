@@ -14,6 +14,13 @@
 		A31811412BA37693000891CD /* HackingSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31811402BA37693000891CD /* HackingSwiftUITests.swift */; };
 		A318114B2BA37693000891CD /* HackingSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A318114A2BA37693000891CD /* HackingSwiftUIUITests.swift */; };
 		A318114D2BA37693000891CD /* HackingSwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A318114C2BA37693000891CD /* HackingSwiftUIUITestsLaunchTests.swift */; };
+		A31811CE2BA377BE000891CD /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = A31811592BA377BC000891CD /* menu.json */; };
+		A31811CF2BA377BE000891CD /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A318115A2BA377BC000891CD /* Menu.swift */; };
+		A31812402BA377BE000891CD /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31811CC2BA377BE000891CD /* Helper.swift */; };
+		A31812412BA377BE000891CD /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31811CD2BA377BE000891CD /* Order.swift */; };
+		A31812452BA37A2B000891CD /* BuildingMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31812442BA37A2B000891CD /* BuildingMenuView.swift */; };
+		A31812482BA38C7D000891CD /* BundleReadExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31812472BA38C7D000891CD /* BundleReadExtension.swift */; };
+		A318124A2BA39370000891CD /* ComposingListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31812492BA39370000891CD /* ComposingListRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,13 @@
 		A31811462BA37693000891CD /* HackingSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackingSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A318114A2BA37693000891CD /* HackingSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackingSwiftUIUITests.swift; sourceTree = "<group>"; };
 		A318114C2BA37693000891CD /* HackingSwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackingSwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A31811592BA377BC000891CD /* menu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
+		A318115A2BA377BC000891CD /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		A31811CC2BA377BE000891CD /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		A31811CD2BA377BE000891CD /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		A31812442BA37A2B000891CD /* BuildingMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingMenuView.swift; sourceTree = "<group>"; };
+		A31812472BA38C7D000891CD /* BundleReadExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleReadExtension.swift; sourceTree = "<group>"; };
+		A31812492BA39370000891CD /* ComposingListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposingListRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +108,11 @@
 		A318112E2BA37690000891CD /* HackingSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				A31812422BA379D8000891CD /* Feature */,
+				A31811CC2BA377BE000891CD /* Helper.swift */,
+				A31811592BA377BC000891CD /* menu.json */,
+				A318115A2BA377BC000891CD /* Menu.swift */,
+				A31811CD2BA377BE000891CD /* Order.swift */,
 				A318112F2BA37690000891CD /* HackingSwiftUIApp.swift */,
 				A31811312BA37690000891CD /* ContentView.swift */,
 				A31811332BA37692000891CD /* Assets.xcassets */,
@@ -125,6 +144,32 @@
 				A318114C2BA37693000891CD /* HackingSwiftUIUITestsLaunchTests.swift */,
 			);
 			path = HackingSwiftUIUITests;
+			sourceTree = "<group>";
+		};
+		A31812422BA379D8000891CD /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				A31812462BA38C05000891CD /* Extensions */,
+				A31812432BA379E7000891CD /* BuildingMenu */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		A31812432BA379E7000891CD /* BuildingMenu */ = {
+			isa = PBXGroup;
+			children = (
+				A31812442BA37A2B000891CD /* BuildingMenuView.swift */,
+				A31812492BA39370000891CD /* ComposingListRowView.swift */,
+			);
+			path = BuildingMenu;
+			sourceTree = "<group>";
+		};
+		A31812462BA38C05000891CD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A31812472BA38C7D000891CD /* BundleReadExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +276,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A31811CE2BA377BE000891CD /* menu.json in Resources */,
 				A31811372BA37692000891CD /* Preview Assets.xcassets in Resources */,
 				A31811342BA37692000891CD /* Assets.xcassets in Resources */,
 			);
@@ -257,8 +303,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A31811CF2BA377BE000891CD /* Menu.swift in Sources */,
+				A31812482BA38C7D000891CD /* BundleReadExtension.swift in Sources */,
 				A31811322BA37690000891CD /* ContentView.swift in Sources */,
+				A318124A2BA39370000891CD /* ComposingListRowView.swift in Sources */,
+				A31812412BA377BE000891CD /* Order.swift in Sources */,
+				A31812452BA37A2B000891CD /* BuildingMenuView.swift in Sources */,
 				A31811302BA37690000891CD /* HackingSwiftUIApp.swift in Sources */,
+				A31812402BA377BE000891CD /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,7 +399,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -404,7 +456,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
