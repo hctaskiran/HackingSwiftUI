@@ -22,12 +22,6 @@ struct CheckoutView: View {
     }
 }
 
-enum PaymentType: String, CaseIterable {
-    case cash = "Cash"
-    case CC = "Credit Card"
-    case Point = "Hako Points"
-}
-
 #Preview {
     CheckoutView().environmentObject(Order())
 }
