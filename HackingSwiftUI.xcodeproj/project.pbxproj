@@ -25,6 +25,11 @@
 		A31812842BA3B4F0000891CD /* Image+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31812832BA3B4F0000891CD /* Image+Extension.swift */; };
 		A31812872BA3B741000891CD /* DisplayDetailsWithNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31812862BA3B741000891CD /* DisplayDetailsWithNavigation.swift */; };
 		A31812892BA3B962000891CD /* ItemDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31812882BA3B962000891CD /* ItemDetailView.swift */; };
+		A31D6B082BA5B89100148331 /* OrderViewEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31D6B072BA5B89100148331 /* OrderViewEnvironment.swift */; };
+		A31D6B0B2BA61BE000148331 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31D6B0A2BA61BE000148331 /* MainTabView.swift */; };
+		A31D6B0E2BA61C8400148331 /* SystemImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31D6B0D2BA61C8400148331 /* SystemImages.swift */; };
+		A31D6B102BA624FF00148331 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31D6B0F2BA624FF00148331 /* CheckoutView.swift */; };
+		A31D6B122BA630A400148331 /* CheckoutAdvancedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31D6B112BA630A400148331 /* CheckoutAdvancedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +71,11 @@
 		A31812832BA3B4F0000891CD /* Image+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Extension.swift"; sourceTree = "<group>"; };
 		A31812862BA3B741000891CD /* DisplayDetailsWithNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayDetailsWithNavigation.swift; sourceTree = "<group>"; };
 		A31812882BA3B962000891CD /* ItemDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailView.swift; sourceTree = "<group>"; };
+		A31D6B072BA5B89100148331 /* OrderViewEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewEnvironment.swift; sourceTree = "<group>"; };
+		A31D6B0A2BA61BE000148331 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		A31D6B0D2BA61C8400148331 /* SystemImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemImages.swift; sourceTree = "<group>"; };
+		A31D6B0F2BA624FF00148331 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
+		A31D6B112BA630A400148331 /* CheckoutAdvancedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutAdvancedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +167,7 @@
 		A31812422BA379D8000891CD /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				A31D6B0C2BA61C7700148331 /* Core */,
 				A31812852BA3B6FE000891CD /* Views */,
 				A31812462BA38C05000891CD /* Extensions */,
 			);
@@ -180,8 +191,20 @@
 				A31812812BA39ED3000891CD /* RefactoredListRowView.swift */,
 				A31812862BA3B741000891CD /* DisplayDetailsWithNavigation.swift */,
 				A31812882BA3B962000891CD /* ItemDetailView.swift */,
+				A31D6B072BA5B89100148331 /* OrderViewEnvironment.swift */,
+				A31D6B0A2BA61BE000148331 /* MainTabView.swift */,
+				A31D6B0F2BA624FF00148331 /* CheckoutView.swift */,
+				A31D6B112BA630A400148331 /* CheckoutAdvancedView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		A31D6B0C2BA61C7700148331 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A31D6B0D2BA61C8400148331 /* SystemImages.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,11 +344,16 @@
 				A31811322BA37690000891CD /* ContentView.swift in Sources */,
 				A318124A2BA39370000891CD /* ComposingListRowView.swift in Sources */,
 				A31812412BA377BE000891CD /* Order.swift in Sources */,
+				A31D6B122BA630A400148331 /* CheckoutAdvancedView.swift in Sources */,
+				A31D6B0E2BA61C8400148331 /* SystemImages.swift in Sources */,
+				A31D6B082BA5B89100148331 /* OrderViewEnvironment.swift in Sources */,
 				A31812872BA3B741000891CD /* DisplayDetailsWithNavigation.swift in Sources */,
 				A31812842BA3B4F0000891CD /* Image+Extension.swift in Sources */,
 				A31812822BA39ED3000891CD /* RefactoredListRowView.swift in Sources */,
 				A31812452BA37A2B000891CD /* BuildingMenuView.swift in Sources */,
+				A31D6B0B2BA61BE000148331 /* MainTabView.swift in Sources */,
 				A31811302BA37690000891CD /* HackingSwiftUIApp.swift in Sources */,
+				A31D6B102BA624FF00148331 /* CheckoutView.swift in Sources */,
 				A31812402BA377BE000891CD /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
